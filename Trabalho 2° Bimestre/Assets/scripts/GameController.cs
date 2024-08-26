@@ -21,4 +21,9 @@ public class GameController : MonoBehaviour
     {
         scoreText.text = totalScore.ToString(); 
     }
+
+    public void ShowGameOver()
+    {
+        
+    }
 }
