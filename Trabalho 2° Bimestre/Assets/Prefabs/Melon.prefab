@@ -156,7 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41498b709b00ae443b1e2b5599e23701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collected: {fileID: 6712658096727344931}
+  collected: {fileID: 8900380975122349382, guid: 6101280528b06ad4fa745d01a67d6e30, type: 3}
+  Score: 10
 --- !u!1001 &2786786637246020197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -233,10 +234,5 @@ PrefabInstance:
 --- !u!4 &3594903121655376475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1679577652029853758, guid: 6101280528b06ad4fa745d01a67d6e30, type: 3}
-  m_PrefabInstance: {fileID: 2786786637246020197}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6712658096727344931 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8900380975122349382, guid: 6101280528b06ad4fa745d01a67d6e30, type: 3}
   m_PrefabInstance: {fileID: 2786786637246020197}
   m_PrefabAsset: {fileID: 0}

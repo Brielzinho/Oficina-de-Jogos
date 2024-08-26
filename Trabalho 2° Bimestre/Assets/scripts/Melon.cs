@@ -7,7 +7,9 @@ public class Melon : MonoBehaviour
     private SpriteRenderer sr;
     private CircleCollider2D circle;
 
-    public GameObject collected; 
+    public GameObject collected;
+    public int Score; 
+
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -20,6 +22,9 @@ public class Melon : MonoBehaviour
             sr.enabled = false;
             circle.enabled = false;
             collected.SetActive(true);
+
+            GameController.instance.totalScore += Score;
+            GameController.instance.UpdateScoreText();
 
             Destroy(gameObject, 0.25f);
         }
