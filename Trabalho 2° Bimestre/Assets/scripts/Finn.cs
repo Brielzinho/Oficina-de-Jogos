@@ -77,6 +77,12 @@ public class Finn : MonoBehaviour
             isJumping = false;
             anim.SetBool("jump", false);
         }
+
+        if (collision.gameObject.tag == "Spike")
+        {
+            GameController.instance.ShowGameOver();
+            Destroy(gameObject);
+        }
     }
 
     void OnCollisionExit2D(Collision2D collision)
