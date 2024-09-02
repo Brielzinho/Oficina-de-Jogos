@@ -19,7 +19,7 @@ public class Finn : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
- 
+
     void Update()
     {
         Move();
