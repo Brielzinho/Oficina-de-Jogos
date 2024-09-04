@@ -31,15 +31,16 @@ public class EfeitoDigitador : MonoBehaviour
     private void OnDisable()
     {
         componenteTexto.text = mensagemOriginal;
+        StopAllCoroutines();
     }
 
-    public ImprimirMensagem(string mensagem)
+    public void ImprimirMensagem(string mensagem)
     {
         if(gameObject.activeInHierarchy)
         {
             if(imprmindo) return;
             imprmindo = true;
-            StartCoroutine(mensagem);
+            StartCoroutine(LetraPorLetra(mensagem));
         }
     }
 
@@ -52,7 +53,6 @@ public class EfeitoDigitador : MonoBehaviour
             componenteTexto.text = msg;
             _audioSorce.Play();
             yield return new WaitForSeconds(tempoEntreLetras);
-        
         }
 
         imprmindo = false;
